@@ -2,3 +2,6 @@
 	path = public
 	url = git@github.com:juslee/juslee.github.io.git
 	branch = master
+[submodule "themes/hugo-tranquilpeak-theme"]
+	path = themes/hugo-tranquilpeak-theme
+	url = git@github.com:kakawait/hugo-tranquilpeak-theme.git
