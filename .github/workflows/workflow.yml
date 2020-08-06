@@ -22,4 +22,11 @@ jobs:
           extended: true
 
       - name: Build
-        run: ./deploy.sh "deploy..."
+        run: hugo --minify
+
+      - name: Deploy
+        run: github-actions-x/commit@v2.6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          push-branch: "master"
+          commit-message: "publish"
