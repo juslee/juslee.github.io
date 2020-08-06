@@ -22,4 +22,4 @@ jobs:
           extended: true
 
       - name: Build
-        run: ./deploy "deploy..."
+        run: ./deploy.sh "deploy..."
