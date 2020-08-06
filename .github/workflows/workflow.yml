@@ -25,8 +25,7 @@ jobs:
         run: hugo --minify
 
       - name: Deploy
-        uses: github-actions-x/commit@v2.6
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          push-branch: "master"
-          commit-message: "publish"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
